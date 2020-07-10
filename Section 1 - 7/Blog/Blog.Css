@@ -1,0 +1,36 @@
+body {
+border: 20px solid #bdc3c7;
+margin: 20px auto;
+max-width: 700px;
+width: 80%;
+padding: 20px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+	font-size: 2.0rem;
+	color: #2c3e50;
+}
+
+.summary {
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+}
+
+.end {
+	border-bottom: 2px solid #f1f1f1;
+	padding-bottom: 20px;
+}
+
+.quote {
+	font-size: 16px;
+	border-left: 10px solid #f1f1f1;
+	padding-left: 10px;
+}
+
+.DATE {
+	text-transform: uppercase;
+	color: #3498db;
+	letter-spacing: 0.2rem;
+}

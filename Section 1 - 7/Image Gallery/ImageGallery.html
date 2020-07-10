@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<style type="text/css">
+		.image {
+			width: 30px;
+			height: 30px;
+		}
+		.Body {
+			padding-top: 70px;
+		}
+		.jumbotron {
+			color: #2c3e50;
+			background: #ecf0f1;
+		}
+		.navbar-inverse .navbar-brand, .navbar-inverse, a{
+			background: #2c3e50;
+			color: white;
+		}
+		.navbar-inverse .navbar-nav>li>a {
+			color: white;
+		}
+	</style>
+
+<!-- DARK BLUE: #2c3e50
+LIGHT GRAY: #ecf0f1 -->
+
+</head>
+<body class="Body">
+
+<!---NAV-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top"> <!--FIXED NAV BAR HERE-->
+	<div class="container">
+	<!--HEADER STARTS-->
+		<div class="navbar-header">
+			<!-- HAMBURGER ICON -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+				<span class="sr-only">Toggle Navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>	
+			</button>
+			<!-- HAMBURGER ICON ENDS -->
+			<!-- BRAND LOGO -->
+			<a href="#" class="navbar-brand"><span class="glyphicon glyphicon-picture"></span> IMGS</a>
+			<!-- BRAND LOGO ENDS-->
+		</div>
+		<!-- COLLAPSIBLE NAVBAR STARTS -->
+		<div class="collapse navbar-collapse" id="bs-nav-demo">
+			<ul class="nav navbar-nav">
+				<li><a href="#">CONTACT US</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+			<!-- MAIN NAVBAR ENDS -->
+			<!-- RIGHT NAVBAR STARTS -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Signup</a></li>
+			</ul>
+			<!-- RIGHT NAVBAR ENDS -->
+		</div>
+		<!-- COLLAPSED NAVBAR ENDS -->
+	<!--HEADER ENDS-->
+</nav>
+
+<!--JUMBOTRON--->
+
+<div class="container">
+ 	<div class="jumbotron jumbotron-fluid">
+  				<h1 class="display-4"><span class="glyphicon glyphicon-camera"></span> The Image Gallery</h1>
+    		<p class="lead">A bunch of beautiful images I didn't take (except for the 1st one!)</p>
+  			</div>
+		</div>
+	</div>
+</div>
+
+<!--IMAGE GALLERY--->
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="http://i.imgur.com/qK42fUu.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1435771112039-1e5b2bcad966?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
+				</div>
+			</div>
+		</div>		
+	</div>
+
+<!--SCRIPT--->
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</div>
+</div>
+</body>
+</html>

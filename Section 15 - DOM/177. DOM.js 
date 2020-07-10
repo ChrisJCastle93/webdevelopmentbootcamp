@@ -1,0 +1,9 @@
+// Manipulating a H1
+
+// Select it
+
+var h1 = document.querySelector("h1")
+
+// Manipulate it
+
+h1.style.color = "pink";
