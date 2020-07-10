@@ -11,6 +11,7 @@
 .completed {
     color:rgba(0, 0, 0, 0.2);
     text-decoration: line-through;
+    font-size: 14px;
 }
 
 h1 {
