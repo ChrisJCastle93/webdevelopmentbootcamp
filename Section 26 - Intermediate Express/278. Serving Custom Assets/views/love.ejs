@@ -1,0 +1,16 @@
+<h1>You fell in love with: <%= thingVar.toUpperCase() %> </h1> <!-- This is embedded js in html -->
+<!-- thingVar is a variable in the app.js file -->
+
+<!-- Check if line says Rusty-->
+
+<% if(thingVar.toLowerCase() === "rusty"){ %>
+<p>GOOD CHOICE! RUSTY IS THE BEST</p>
+<% } %>
+
+<p>this is the love2.ejs file</p>
+
+
+<!-- NOTES -->
+<!-- 
+<%= %> === This javascript tag means the middle of it will be added to the htmll
+<% %> === This is for logic, remove the equals sign else this will appear in html  -->

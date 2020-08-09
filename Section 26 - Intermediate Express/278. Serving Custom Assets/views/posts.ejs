@@ -1,0 +1,20 @@
+<%- include("partials/header") %> <!-- THESE ARE LINKED TO THE HEADER AND FOOTER TEMPLATES SO THAT WE DON'T NEED TO WRITE HTML-->
+<H1> The Posts Page</H1>
+
+<!-- CREATING A FOR LOOP TO ADD MULTIPLE POSTS -->
+
+<% for(var i=0; i < posts.length; i++) { %>
+     <li>
+        <strong><%= posts[i].title %></strong> - <%= posts[i].author %>
+    </li>
+<% } %>
+
+<!-- CREATING A FOREACH LOOP TO ADD MULTIPLE POSTS -->
+
+<% posts.forEach(function(post){ %>
+    <li>
+        <strong><%= post.title %></strong> - <%= post.author %>
+    </li>
+<% }) %>
+
+<%- include("partials/footer") %>
