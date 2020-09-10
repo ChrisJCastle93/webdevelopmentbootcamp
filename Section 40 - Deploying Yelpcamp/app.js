@@ -43,8 +43,11 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-var url = "mongodb://localhost/yelp_camp_v10";
-mongoose.connect('mongodb+srv://chrisjcastle:.Dougal22@cluster0.xy1ej.mongodb.net/test?retryWrites=true&w=majority', {
+console.log(process.env.DATABASEURL);
+
+// var url = "mongodb://localhost/yelp_camp_v10"; replaced below with MongoDB Atlas url
+// mongoose.connect('mongodb+srv://chrisjcastle:.Dougal22@cluster0.xy1ej.mongodb.net/test?retryWrites=true&w=majority', {
+mongoose.connect(process.env.DATABASEURL, {
   useNewUrlParser: true,
   useCreateIndex: true
 }).then(() => console.log('Connected to DB!'))
@@ -88,7 +91,7 @@ app.use("/campgrounds", campgroundRoutes);
 //   console.log("Yelpcamp Server has started!");
 // });
 
-var port = process.env.PORT || 3000;
+var port = process.env.PORT || 3000; 
 app.listen(port, function () {
   console.log("Server Has Started!");
 });
