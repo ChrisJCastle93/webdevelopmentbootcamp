@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Secular+One&display=swap&family=Josefin+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/main.css">
+        <link rel="icon" href="/imgs/tent.png">
+        <Title>yelpcamp</Title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <nav id="navbar" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header white">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#rightnavbar" aria-expanded="false" aria-controls="rightnavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a href="/campgrounds"><span><img id="logo" src="/imgs/logo2.png"></span></a>
+                </div>
+                <div class="collapse navbar-collapse white" id="rightnavbar">
+                  <ul class="nav navbar-nav">
+                    <!-- <li class="<%= typeof page !== 'undefined' && page === 'campgrounds' ? 'active' : '' %>"><a href="/campgrounds">Home</a></li> -->
+                  </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="navheader"><a href="/contact">contact</a></li>
+                    <% if(!currentUser){ %>
+                        <li class="navheader"><a href="/login">login</a></li>
+                        <li class="navheader"><a href="/register">sign up</a></li>
+                    <% } else { %>
+                        <li class="dropdown navheader">
+                            <a href="#" class="dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" role="button" type="button" aria-haspopup="true" aria-expanded="false">notifications <span id="badge1"><%= notifications.length %></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li class="navheader">
+                                <a href="/notifications">View past notifications</a>
+                            </li>
+                            <% notifications.forEach(function(notification) { %>                          
+                                <li class="navheader">
+                                    <a href="/notifications/<%= notification.id %>">
+                                        <%= notification.username %> created a new campground
+                                    </a>
+                                </li>
+                            <% }); %>
+                          </ul>
+                        </li>
+                        <li class="navheader"><a class="navitem" href="#">signed in as <%= currentUser.username %></a></li>
+                        <li class="navheader"><a href="/logout">logout</a></li>
+                    <% } %>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container flash">
+            <% if(error && error.length > 0){ %>            <!-- IF STATEMENT ADDED TO HIDE/SHOW ERROR BANNERS-->
+            <div class="alert alert-danger" role="alert">
+                <p><strong> <%= error %> </strong></p>
+            </div>
+            <% } %>
+            <% if(success && success.length > 0){  %>             <!-- IF STATEMENT ADDED TO HIDE/SHOW ERROR BANNERS-->
+            <div class="alert alert-success" role="alert">
+                <p><strong> <%= success %> </strong></p>
+            </div>
+            <% } %>
+        </div>
+        <div class="container">
