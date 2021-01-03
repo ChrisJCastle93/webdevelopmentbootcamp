@@ -1,19 +1,454 @@
-.thumbnail {
+.nav a {
+    font-family: 'Secular One', sans-serif;
+    text-shadow: 2px 2px 8px #111;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+div .thumbnail {
     padding: 0;
+    border-radius: 20px;
+    border: 0px solid gainsboro;
+    box-shadow: gainsboro 2px;
+    margin: 0;
 }
 
-.thumbnail img {
+.productcard:hover {
+    text-shadow: none;
+    text-decoration: none;
+}
+.productcard a:hover {
+    text-shadow: none;
+    text-decoration: none;
+}
+
+.text {
+    /* display: block; */
+    text-align: center;
+    /* overflow: hidden; */
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    padding-left: 10px;
+    padding-right: 10px;
+    display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+.pagination .active a {
+    background-color: #57A99A;
+    border-color: #57A99A;
+}
+
+#add {
+    color: white;
+    font-size: 0.6em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #57A99A;
+    border-color: #57A99A;
+    border-radius: 0px 4px 4px 0px;
+    margin: 0;
+}
+
+.footer {
+    background-color: #57A99A;
+    color: white;
+}
+
+.form-control {
+    border-radius: 4px 0px 0px 4px;
+    margin: 0;
+}
+
+.footer .copyright {
+    text-align: center;
+}
+
+.footer h2 {
+    font-family: 'Secular One', sans-serif;
+}
+
+#indeximg {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
-.thumbnail .caption-full {
+.thumbnail1 .caption-full {
     padding: 9px;
+    position: relative;
 }
 
-body {
-    background: purple;
+.imgframe {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.showimg {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
 }
 
 .delete-form {
     display: inline;
+}
+
+.checked {
+    color: orange;
+}
+
+.row:before, .row:after {display: none !important;}
+
+
+/* Google Maps */
+
+#map {
+    height: 300px;
+    width: 100%;
+}
+
+#logo {
+    max-height: 40px;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* #rightnavbar {
+    background-color: black;
+} */
+
+.navbar-nav .open {
+    background-color:#111;
+  }
+
+#navbar {
+    /* background-color: white; */
+    background: rgba(76, 175, 80, 0.0);
+    margin-bottom: 0px;
+    border: none;
+    z-index: 1;
+}
+
+.navbar-default .navbar-nav li a {
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.navbar-default .navbar-nav .navheader a {
+    color: #57A99A;
+}
+
+.navbar-default .navbar-nav .navheader a:hover {
+    color: #57A99A;
+    text-decoration-line: underline;
+}
+
+.jumbotron p {
+    font-weight: 400;
+    text-shadow: 2px 2px 8px #111;
+}
+
+a {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+#badge {
+    background-color: #fff;
+    color: #57A99A;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+
+#badge1 {
+    background-color: #57A99A;
+    color: #fff;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 10px;
+    padding: 3px 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+div.list-group li.list-group-item.active {
+    background-color: #57A99A;
+    border-color: #57A99A;
+}
+
+.container .jumbotron {
+    max-width: 100%;
+    height: 450px;
+    background-image: url("/imgs/header.jpg");
+    /* background-repeat: no-repeat;
+    background-position: 0px -200px;
+    background-size: cover; */
+    border-radius: 0px;
+    color: white;
+    margin-top: -60px;
+    padding-top: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+/* #jumbotron {
+    display: flex;
+} */
+
+.alert {
+    position: absolute;
+    width: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    height: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.85;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* .alert-success {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+}
+.alert-error {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    font-size: 12px;
+    height: 40px;
+} */
+
+.container .jumbotron h1 {
+    text-shadow: 2px 2px 8px #111;
+    font-family: 'Secular One', sans-serif;
+}
+
+#header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    position: relative;
+}
+
+.pull-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+p.pull-right {
+    margin: 0;
+    font-size: 14px;
+}
+
+h3.pull-right {
+    margin: 0;
+}
+
+div .thumbnail1 .caption-full {
+    padding: 0;
+}
+
+.form h1 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+form.form {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid gainsboro;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #57A99A;
+    border-color: #57A99A;
+};
+
+button.btn.btn-xs.btn-default {
+    border-color: #57A99A;
+}
+
+#campgroundlikes {
+    border-color: #57A99A;
+}
+
+.campdescription {
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid gainsboro;
+}
+
+.well {
+    position: relative;
+    margin-top: 20px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    position: relative;
+    /* border-top: 0.5px solid gainsboro; */
+    overflow: hidden;
+}
+
+.commentstop {
+    border-top: 0.5px solid gainsboro;
+}
+
+#editbutton {
+    font-size: 12px;
+    color: black;
+}
+
+.commentdate {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.commenttext {
+    padding-top: 10px;
+}
+
+.reviewtext {
+    padding-bottom: 10px;
+}
+
+.pull-right .fa {
+    font-size: 0.8em;
+}
+
+div.col-xs-9 {
+    margin-bottom: 20px;
+}
+
+#searchbutton {
+    border: none;
+    height: 44px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+#searchinput {
+    border: none;
+    max-width: 50%;
+    height: 44px;
+    padding: 10px;
+    border-radius: 4px 0px 0px 4px;
+    vertical-align: top;
+    color: black;
+}
+
+div#rightnavbar.navbar-collapse.collapse.in {
+height: 100%;
+background-color: black;
+}
+
+div#rightnavbar.navbar-collapse.collapse.in.white {
+height: 100%;
+background-color: white;
+}
+
+div.navbar-header {
+background-color: black;
+}
+
+div.navbar-header.white {
+background-color: white;
+}
+
+.icon-bar {
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+.productcard {
+    text-shadow: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px #888888;
+    text-decoration: none;
+    padding: 0;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .productcard {
+        text-shadow: none;
+        border-radius: 20px;
+        box-shadow: 2px 2px 4px #888888;
+        text-decoration: none;
+        padding: 0;
+        margin: 0 1% 30px 1%;
+        width: 23%;
+    }
+}
+
+@media (max-width: 768px) {
+.showsidebar {
+    display: none;
+}
 }

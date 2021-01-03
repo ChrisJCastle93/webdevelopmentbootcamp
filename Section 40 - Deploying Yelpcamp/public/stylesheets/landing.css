@@ -1,6 +1,13 @@
 body {
     background-color: #000;
+    color: #5C5858;
   }
+
+  .btn-success {
+    color: #fff;
+    background-color: #57A99A;
+    border-color: #57A99A;
+}
   
   #landing-header {
     z-index: 1;
@@ -9,8 +16,10 @@ body {
     padding-top: 40vh;
   }
 
-  #landing-header h1 {
+  #title {
     color: #fff;
+    margin-top: 5px;
+    margin-bottom: 10px;
   }
 
   .slideshow { 
